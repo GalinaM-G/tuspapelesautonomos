@@ -142,9 +142,12 @@ main {
   border-image-slice: 2;
   border-width: 2px;
   border-image-source: linear-gradient(to right, #92e192, #52a85e);
-  -webkit-transition: background-color 0.4s, color 0.3s;
-  -o-transition: background-color 0.4s, color 0.3s;
-  transition: background-color 0.4s, color 0.3s;
+}
+.btn:hover {
+  color: var(--clr-white);
+  background: -webkit-gradient(linear, left top, right top, from(#92e192), to(#52a85e));
+  background: -o-linear-gradient(left, #92e192, #52a85e);
+  background: linear-gradient(to right, #92e192, #52a85e);
 }
 .btn .title {
   text-align: center;

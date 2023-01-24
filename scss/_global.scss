@@ -70,9 +70,12 @@ main {
     border-image-slice: 2;
     border-width: 2px;
     border-image-source: linear-gradient(to right, #92e192, #52a85e);
-    transition: background-color 0.4s, color 0.3s;
+    
 
-    // &:hover {}
+    &:hover {
+        color: var(--clr-white);
+        background: linear-gradient(to right, #92e192, #52a85e);
+    }
 
     .title {
         text-align: center;
