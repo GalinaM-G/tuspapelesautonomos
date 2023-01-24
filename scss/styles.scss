@@ -1,0 +1,121 @@
+@use 'sass:math';
+
+@import '_reset';
+@import '_fonts';
+@import '_vars';
+@import '_mixins';
+@import 'global';
+
+.header {
+    height: 100vh;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @media screen and (max-width: rem(1550)) {
+        background-image: url('../images/hero-1500.jpg');
+    }
+
+    &__top {
+        color: var(--clr-title-1);
+        background-color: #ffffff82;
+        padding: rem(12) 0;
+    }
+
+    &__cart {
+        padding: rem(2) rem(20) rem(2) 0;
+        border-right: 1px solid rgba(47, 50, 57, 0.20);
+    }
+
+    &__search-img {
+        width: rem(18);
+        height: rem(18);
+        stroke: var(--clr-title-2);
+        transition: stroke 0.4s;
+        &:hover {
+            stroke: var(--clr-decor-1);
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: rem(25);
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__list {
+        display: flex;
+        gap: rem(34);
+        font-family: var(--ff-secondary);
+        font-size: rem(14);
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--clr-menu-link);
+        margin-right: rem(15);
+    }
+
+    &__link {
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--clr-decor-1);
+        }
+    }
+}
+
+.dropdown {
+    display: none;
+}
+
+.logo {
+    &__img {
+        max-width: rem(86);
+    }
+}
+
+.cart {
+    font-size: rem(11);
+    position: relative;
+
+    &__counter {
+        position: absolute;
+        top: -20px;
+        left: 10px;
+        text-align: center;
+        background-color: var(--clr-menu-link);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        color: var(--clr-white);
+
+    }
+
+    &__inner {
+        display: flex;
+        align-items: baseline;
+        gap: rem(10);
+        transition: color 0.4s;
+
+        &:hover,
+        &:hover svg {
+            color: var(--clr-decor-1);
+            stroke: var(--clr-decor-1);
+        }
+    }
+
+    &__img {
+        width: rem(18);
+        height: rem(18);
+        stroke: var(--clr-title-2);
+        stroke-width: 1px;
+        transition: stroke 0.4s;
+    }
+
+}
