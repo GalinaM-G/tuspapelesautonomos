@@ -8,106 +8,114 @@
 </head>
 <body>
     <header class="header">
+        <h1 class="header__title sr-only">Asesoría fiscal</h1>
         <div class="header__top">
-            <div class="container">
-                <nav class="menu">
-                    <a class="logo" href="#">
-                        <img class="logo__img" src="./images/logo.png" alt="logo">
-                    </a>
-                    <div class="menu__body">
-                        <ul class="menu__list">
-                            <li class="menu__item ">
-                                <a class="menu__link" href="#home">
-                                    impuestos
-                                </a>
-                                <ul class="menu__dropdown dropdown">
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">
-                                            Pack impuestos frequentes
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">
-                                            Impuestos trimestrales
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">
-                                            Impuestos intracomunitarias
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">
-                                            Impuestos anuales
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">
-                                            Renta autónomos
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#chef">
-                                    ayuda expres
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#holidays">
-                                    trámites
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#holidays">
-                                    sobre mí
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#holidays">
-                                    blog
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#holidays">
-                                    contacto
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header__btns">
-                        <a class="header__cart cart" href="#">
-                            <span class="sr-only">cart</span>
-                            <span class="cart__counter">0</span>
-                           <div class="cart__inner">
-                                <svg class="cart__img">
-                                    <use href="./images/icons/icon.svg#cart" />
-                                </svg>
-                                <span class="cart__price">0,00<span class="currency">&euro;</span></span>
-                           </div>
-                            
-                        </a>
-                        <button class="header__search" type="button">
-                            <span class="sr-only">Поиск</span>
-                            <svg class="header__search-img">
-                                <use href="./images/icons/icon.svg#search" />
+            <nav class="menu container">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="./images/logo.png" alt="logo">
+                </a>
+                <div class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item ">
+                            <a class="menu__link" href="#home">
+                                impuestos
+                            </a>
+                            <ul class="menu__dropdown dropdown">
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        Pack impuestos frequentes
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        Impuestos trimestrales
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        Impuestos intracomunitarias
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        Impuestos anuales
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        Renta autónomos
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#chef">
+                                ayuda expres
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#holidays">
+                                trámites
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#holidays">
+                                sobre mí
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#holidays">
+                                blog
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#holidays">
+                                contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__btns">
+                    <a class="header__cart cart" href="#">
+                        <span class="sr-only">cart</span>
+                        <span class="cart__counter">0</span>
+                        <div class="cart__inner">
+                            <svg class="cart__img">
+                                <use href="./images/icons/icon.svg#cart" />
                             </svg>
-                        </button>
-                        <a class="header__shop btn" href="#">qué necesitas (tienda)</a>
-                    </div>
-                </nav>
+                            <span class="cart__price">0,00<span class="currency">&euro;</span></span>
+                        </div>
+
+                    </a>
+                    <button class="header__search" type="button">
+                        <span class="sr-only">Поиск</span>
+                        <svg class="header__search-img">
+                            <use href="./images/icons/icon.svg#search" />
+                        </svg>
+                    </button>
+                    <a class="header__shop btn" href="#">qué necesitas (tienda)</a>
+            </nav>
+        </div>
+        <div class="header__center">
+            <div class="container">
+                <span class="header__subtitle">Para autónomos</span>
+                <div class="header__info">
+                    <span class="header__info-top">¿Qué necesitas?</span>
+                    <span class="header__info-bottom">Tus impuestos | Tus trámites | Ayuda express <span
+                            class="header__info-dec">Sin cuotas mensuales</span></span>
+                </div>
+                <a href="#" class="header__link">quiero saber más</a>
             </div>
         </div>
-        <!-- <div class="header__center">
-            <div class="container">
-                <h1 class="header__title">madame koko<br>
-                    <span class="header__subtitle">
-                        author's <span>and molecular cuisine</span>
-                    </span>
-                </h1>
-                <a href="#" class="header__link btn">our menu</a>
+        <div class="header__bottom">
+            <div class="header__items container">
+                <span class="header__item">Somos personas</span>
+                <span class="header__item">Sencillo</span>
+                <span class="header__item">Agilidad</span>
+                <span class="header__item">Sin cuotas</span>
             </div>
-        </div> -->
+        </div>
+
     </header>
     <main>
 

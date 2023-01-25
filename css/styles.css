@@ -136,7 +136,7 @@ main {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5;
+  letter-spacing: 1.2;
   line-height: 1.6;
   border: 2px solid;
   border-image-slice: 2;
@@ -167,7 +167,17 @@ main {
 }
 
 .header {
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
   background-image: url("../images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -179,9 +189,13 @@ main {
   }
 }
 .header__top {
+  position: fixed;
+  top: 0;
+  width: 100%;
   color: var(--clr-title-1);
   background-color: rgba(255, 255, 255, 0.5098039216);
   padding: 0.75rem 0;
+  z-index: 10;
 }
 .header__cart {
   padding: 0.125rem 1.25rem 0.125rem 0;
@@ -206,6 +220,44 @@ main {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.5625rem;
+}
+.header__center {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: var(--clr-white);
+}
+.header__info {
+  max-width: 46.25rem;
+}
+.header__subtitle {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.header__info-top {
+  display: block;
+  font-size: 4.5rem;
+  font-weight: 900;
+  font-family: var(--ff-secondary);
+}
+.header__info-bottom {
+  display: inline-block;
+  color: var(--clr-decor-1);
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 2.1875rem;
+}
+.header__info-dec {
+  border-bottom: 4px solid var(--clr-decor-1);
+}
+.header__link {
+  padding: 20px 40px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, right top, from(#92e192), to(#52a85e));
+  background: -o-linear-gradient(left, #92e192, #52a85e);
+  background: linear-gradient(to right, #92e192, #52a85e);
 }
 
 .menu {

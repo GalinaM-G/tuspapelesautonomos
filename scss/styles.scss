@@ -7,7 +7,11 @@
 @import 'global';
 
 .header {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    min-height: 100vh;
     background-image: url('../images/hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,9 +22,13 @@
     }
 
     &__top {
+        position: fixed;
+        top: 0;
+        width: 100%;
         color: var(--clr-title-1);
         background-color: #ffffff82;
         padding: rem(12) 0;
+        z-index: 10;
     }
 
     &__cart {
@@ -33,6 +41,7 @@
         height: rem(18);
         stroke: var(--clr-title-2);
         transition: stroke 0.4s;
+
         &:hover {
             stroke: var(--clr-decor-1);
         }
@@ -42,6 +51,47 @@
         display: flex;
         align-items: center;
         gap: rem(25);
+    }
+
+    &__center {
+        flex: 1;
+        color: var(--clr-white);
+    }
+
+    &__info {
+        max-width: rem(740);
+    }
+
+    &__subtitle {
+        font-size: rem(16);
+        letter-spacing: 2px;
+    }
+
+    &__info-top {
+        display: block;
+        font-size: rem(72);
+        font-weight: 900;
+        font-family: var(--ff-secondary);
+    }
+
+    &__info-bottom {
+        display: inline-block;
+        color: var(--clr-decor-1);
+        font-size: rem(30);
+        font-weight: 600;
+        margin-bottom: rem(35);
+    }
+
+    &__info-dec {
+        border-bottom: 4px solid var(--clr-decor-1);
+    }
+
+    &__link {
+        padding: 20px 40px;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background: linear-gradient(to right, #92e192, #52a85e);
     }
 }
 
