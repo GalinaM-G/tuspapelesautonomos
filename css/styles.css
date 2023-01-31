@@ -705,6 +705,7 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 4.375rem;
+  line-height: 1.7;
 }
 .about__item {
   position: relative;
@@ -803,4 +804,49 @@ main {
 .about .advantage__info {
   color: var(--clr-white-transp);
   padding: 0 3.4375rem;
+}
+
+.situations__section {
+  padding-bottom: 3.125rem;
+}
+.situations__title {
+  margin-bottom: 12.5rem;
+}
+.situations__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.875rem;
+  font-size: 1.125rem;
+}
+.situations__item {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 4.375rem;
+  line-height: 1.7;
+}
+.situations__item::before {
+  position: absolute;
+  content: "";
+  width: 7.125rem;
+  height: 8.75rem;
+  top: -6.25rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.situations__item--1::before {
+  background-image: url("../images/situation/sit-1.png");
+}
+.situations__item--2::before {
+  background-image: url("../images/situation/sit-2.png");
+}
+.situations__item--3::before {
+  background-image: url("../images/situation/sit-3.png");
+}
+.situations__item--4::before {
+  background-image: url("../images/situation/sit-4.png");
 }

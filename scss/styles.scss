@@ -512,6 +512,7 @@
         gap: rem(25);
         flex-wrap: wrap;
         margin-bottom: rem(70);
+        line-height: 1.7;
     }
 
     &__item {
@@ -560,7 +561,7 @@
 
     .advantage {
         background-color: #2f3239;
-            color: var(--clr-white);
+        color: var(--clr-white);
 
         &__items {
             display: flex;
@@ -575,7 +576,7 @@
         &__item {
             position: relative;
             flex: 1;
-           padding-top: rem(85);
+            padding-top: rem(85);
 
             &::before {
                 position: absolute;
@@ -598,6 +599,7 @@
             &--3::before {
                 background-image: url("../images/icons/rocket.png");
             }
+
             &--4::before {
                 background-image: url("../images/icons/saving.png");
             }
@@ -614,4 +616,56 @@
             padding: 0 rem(55);
         }
     }
+}
+
+.situations {
+
+    &__section {
+        padding-bottom: rem(50);
+    }
+
+    &__title {
+        margin-bottom: rem(200);
+    }
+
+    &__items {
+        display: flex;
+        gap: rem(30);
+        font-size: rem(18);
+    }
+
+    &__item {
+        position: relative;
+        flex: 1;
+        padding-top: rem(70);
+        line-height: 1.7;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: rem(114);
+            height: rem(140);
+            top: rem(-100);
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+        &--1::before {
+            background-image: url("../images/situation/sit-1.png");
+        }
+        &--2::before {
+            background-image: url("../images/situation/sit-2.png");
+        }
+        &--3::before {
+            background-image: url("../images/situation/sit-3.png");
+        }
+        &--4::before {
+            background-image: url("../images/situation/sit-4.png");
+        }
+
+    }
+
+
+
+
 }
