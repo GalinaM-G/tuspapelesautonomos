@@ -32,6 +32,8 @@
 
     &__top--active {
         background-color: #fff;
+        border-bottom: 1px solid rgba(234, 234, 234, 0.8);
+        box-shadow: 0 0 10px #d5d4d4e9 ;
     }
 
     &__cart {
@@ -347,7 +349,7 @@
 
         &__info {
             position: relative;
-            padding: rem(115) rem(50) rem(30) rem(50);
+            padding: rem(115) rem(40) rem(30);
 
             &::before {
                 position: absolute;
@@ -439,15 +441,11 @@
     }
 
     &__img {
-        width: 40%;
         margin-right: rem(35);
 
         @media screen and (max-width: rem(1130)) {
             margin-right: 0;
             margin-bottom: rem(100);
-            max-width: rem(300);
-            width: 100%;
-
         }
     }
 
@@ -499,7 +497,7 @@
         max-width: rem(800);
         text-align: center;
         margin: 0 auto;
-        margin-bottom: rem(100);
+        margin-bottom: rem(90);
 
         & span {
             font-weight: 600;
@@ -648,24 +646,135 @@
             top: rem(-100);
             left: 50%;
             transform: translateX(-50%);
-            
+
         }
+
         &--1::before {
             background-image: url("../images/situation/sit-1.png");
         }
+
         &--2::before {
             background-image: url("../images/situation/sit-2.png");
         }
+
         &--3::before {
             background-image: url("../images/situation/sit-3.png");
         }
+
         &--4::before {
             background-image: url("../images/situation/sit-4.png");
         }
+    }
+}
 
+.testimonies {
+    display: flex;
+    justify-content: space-between;
+
+    &__subtext::after {
+        left: 2%;
+        background-color: #fff;
     }
 
+    &__title {
+        text-align-last: left;
+        margin-bottom: rem(90);
+        & span {
+            font-weight: 700;
+        }
+    }
 
+    &__left {
+        background-image: url("../images/testimony/testimonios-bgr.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex: 1;
+    }
 
+    &__right {
+        background-color: #5fc56c;
+        flex: 1;
+        padding: rem(70) rem(35);
+    }
 
+    .slider {
+        margin-left: rem(-85);
+        font-family: var(--ff-secondary);
+        font-size: rem(20);
+        line-height: 1.7;
+
+        &__card {
+            background-color: #fff;
+            padding: rem(120) rem(45) rem(40);
+            max-width: 80%;
+        }
+
+        &__text {
+            margin-bottom: rem(30);
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: ",,";
+                font-family: "Seymour One";
+                font-size: rem(140);
+                width: rem(45);
+                height: rem(55);
+                transform: rotate(180deg);
+                top: 60px;
+                left: 35px;
+                color: #52a85e;
+
+            }
+
+        }
+
+        &__name {
+            display: block;
+            font-size: rem(18);
+            font-weight: 900;
+            color: var(--clr-title-1);
+            line-height: 1;
+        }
+
+        &__job {
+            font-family: var(--ff-primary);
+            font-size: rem(13);
+            color: var(--clr-decor-2);
+        }
+
+        &__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__client {
+            position: relative;
+            padding-left: rem(100);
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: rem(80);
+                height: rem(80);
+                border-radius: 50%;
+                left: 0;
+                bottom: 0;
+            }
+
+            &--1::before {
+                background-image: url('../images/testimony/testimonios-female.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+
+        &__star {
+            width: rem(16);
+            height: rem(16);
+            fill: orange;
+        }
+
+    }
 }

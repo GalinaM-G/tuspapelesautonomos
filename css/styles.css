@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url("https://use.typekit.net/qqu6bzb.css");
+@import url(https://fonts.googleapis.com/css?family=Seymour+One:regular);
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -236,6 +237,9 @@ main {
 }
 .header__top--active {
   background-color: #fff;
+  border-bottom: 1px solid rgba(234, 234, 234, 0.8);
+  -webkit-box-shadow: 0 0 10px rgba(213, 212, 212, 0.9137254902);
+          box-shadow: 0 0 10px rgba(213, 212, 212, 0.9137254902);
 }
 .header__cart {
   padding: 0.125rem 1.25rem 0.125rem 0;
@@ -544,7 +548,7 @@ main {
 }
 .service .card__info {
   position: relative;
-  padding: 7.1875rem 3.125rem 1.875rem 3.125rem;
+  padding: 7.1875rem 2.5rem 1.875rem;
 }
 .service .card__info::before {
   position: absolute;
@@ -633,15 +637,12 @@ main {
   color: var(--clr-decor-1);
 }
 .owner__img {
-  width: 40%;
   margin-right: 2.1875rem;
 }
 @media screen and (max-width: 70.625rem) {
   .owner__img {
     margin-right: 0;
     margin-bottom: 6.25rem;
-    max-width: 18.75rem;
-    width: 100%;
   }
 }
 .owner__content {
@@ -689,7 +690,7 @@ main {
   max-width: 50rem;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 6.25rem;
+  margin-bottom: 5.625rem;
 }
 .about__text span {
   font-weight: 600;
@@ -849,4 +850,115 @@ main {
 }
 .situations__item--4::before {
   background-image: url("../images/situation/sit-4.png");
+}
+
+.testimonies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.testimonies__subtext::after {
+  left: 2%;
+  background-color: #fff;
+}
+.testimonies__title {
+  -moz-text-align-last: left;
+       text-align-last: left;
+  margin-bottom: 5.625rem;
+}
+.testimonies__title span {
+  font-weight: 700;
+}
+.testimonies__left {
+  background-image: url("../images/testimony/testimonios-bgr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.testimonies__right {
+  background-color: #5fc56c;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 4.375rem 2.1875rem;
+}
+.testimonies .slider {
+  margin-left: -5.3125rem;
+  font-family: var(--ff-secondary);
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+.testimonies .slider__card {
+  background-color: #fff;
+  padding: 7.5rem 2.8125rem 2.5rem;
+  max-width: 80%;
+}
+.testimonies .slider__text {
+  margin-bottom: 1.875rem;
+  position: relative;
+}
+.testimonies .slider__text::before {
+  position: absolute;
+  content: ",,";
+  font-family: "Seymour One";
+  font-size: 8.75rem;
+  width: 2.8125rem;
+  height: 3.4375rem;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 60px;
+  left: 35px;
+  color: #52a85e;
+}
+.testimonies .slider__name {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 900;
+  color: var(--clr-title-1);
+  line-height: 1;
+}
+.testimonies .slider__job {
+  font-family: var(--ff-primary);
+  font-size: 0.8125rem;
+  color: var(--clr-decor-2);
+}
+.testimonies .slider__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.testimonies .slider__client {
+  position: relative;
+  padding-left: 6.25rem;
+}
+.testimonies .slider__client::before {
+  position: absolute;
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  left: 0;
+  bottom: 0;
+}
+.testimonies .slider__client--1::before {
+  background-image: url("../images/testimony/testimonios-female.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.testimonies .slider__star {
+  width: 1rem;
+  height: 1rem;
+  fill: orange;
 }

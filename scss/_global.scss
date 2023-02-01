@@ -70,7 +70,7 @@ main {
     border-image-slice: 2;
     border-width: 2px;
     border-image-source: linear-gradient(to right, #92e192, #52a85e);
-    
+
 
     &:hover {
         color: var(--clr-white);
@@ -119,16 +119,17 @@ main {
     color: var(--clr-title-2);
     letter-spacing: 2px;
     margin-bottom: rem(40);
+
     &::after {
-            position: absolute;
-            content: '';
-    background-color: var(--clr-decor-1);
-            width: 46px;
-            height: 2px;
-            bottom: -7px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+        position: absolute;
+        content: '';
+        background-color: var(--clr-decor-1);
+        width: 46px;
+        height: 2px;
+        bottom: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .section {
