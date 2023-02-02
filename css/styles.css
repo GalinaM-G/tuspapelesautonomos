@@ -84,6 +84,10 @@ a {
   --ff-secondary: "muli", sans-serif;
 }
 
+* {
+  border: 1px solid #000;
+}
+
 html,
 body {
   height: 100%;
@@ -238,8 +242,8 @@ main {
 .header__top--active {
   background-color: #fff;
   border-bottom: 1px solid rgba(234, 234, 234, 0.8);
-  -webkit-box-shadow: 0 0 10px rgba(213, 212, 212, 0.9137254902);
-          box-shadow: 0 0 10px rgba(213, 212, 212, 0.9137254902);
+  -webkit-box-shadow: 0 0 5px rgba(213, 212, 212, 0.9137254902);
+          box-shadow: 0 0 5px rgba(213, 212, 212, 0.9137254902);
 }
 .header__cart {
   padding: 0.125rem 1.25rem 0.125rem 0;
@@ -877,29 +881,55 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 .testimonies__right {
   background-color: #5fc56c;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
   padding: 4.375rem 2.1875rem;
 }
+.testimonies__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .testimonies .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 0.625rem;
+  max-width: 37.5rem;
+  width: 100%;
   margin-left: -5.3125rem;
   font-family: var(--ff-secondary);
   font-size: 1.25rem;
   line-height: 1.7;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 .testimonies .slider__card {
   background-color: #fff;
   padding: 7.5rem 2.8125rem 2.5rem;
-  max-width: 80%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  scroll-snap-align: start;
 }
 .testimonies .slider__text {
-  margin-bottom: 1.875rem;
+  margin-bottom: 2.5rem;
   position: relative;
 }
 .testimonies .slider__text::before {
@@ -961,4 +991,17 @@ main {
   width: 1rem;
   height: 1rem;
   fill: orange;
+}
+.testimonies .slider-bnts {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.testimonies .slider-btns button {
+  background-color: var(--clr-decor-1);
+  width: 2.1875rem;
+  height: 0.125rem;
+}
+.testimonies .slider-btns li {
+  line-height: 0.8;
 }

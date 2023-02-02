@@ -33,7 +33,7 @@
     &__top--active {
         background-color: #fff;
         border-bottom: 1px solid rgba(234, 234, 234, 0.8);
-        box-shadow: 0 0 10px #d5d4d4e9 ;
+        box-shadow: 0 0 5px #d5d4d4e9;
     }
 
     &__cart {
@@ -679,6 +679,7 @@
     &__title {
         text-align-last: left;
         margin-bottom: rem(90);
+
         & span {
             font-weight: 700;
         }
@@ -688,29 +689,43 @@
         background-image: url("../images/testimony/testimonios-bgr.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        flex: 1;
+        flex: 1 0 50%;
     }
 
     &__right {
         background-color: #5fc56c;
-        flex: 1;
+        flex: 1 0 50%;
         padding: rem(70) rem(35);
     }
 
+    &__slider {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .slider {
+        display: flex;
+        align-items: start;
+        gap: rem(10);
+        max-width: rem(600);
+        width: 100%;
         margin-left: rem(-85);
         font-family: var(--ff-secondary);
         font-size: rem(20);
         line-height: 1.7;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
 
         &__card {
             background-color: #fff;
             padding: rem(120) rem(45) rem(40);
-            max-width: 80%;
+            flex: 0 0 100%;
+            scroll-snap-align: start;
         }
 
         &__text {
-            margin-bottom: rem(30);
+            margin-bottom: rem(40);
             position: relative;
 
             &::before {
@@ -724,9 +739,7 @@
                 top: 60px;
                 left: 35px;
                 color: #52a85e;
-
             }
-
         }
 
         &__name {
@@ -775,6 +788,20 @@
             height: rem(16);
             fill: orange;
         }
+    }
 
+    .slider-bnts {
+        flex: 1;
+    }
+
+    .slider-btns button {
+        background-color: var(--clr-decor-1);
+        width: rem(35);
+        height: rem(2);
+
+    }
+
+    .slider-btns li {
+        line-height: 0.8;
     }
 }

@@ -17,10 +17,13 @@
     --ff-secondary: "muli", sans-serif;
 
 }
-
+* {
+    border: 1px solid #000;
+}
 html,
 body {
     height: 100%;
+    
 }
 
 body {
