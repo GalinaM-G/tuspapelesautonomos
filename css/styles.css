@@ -1106,6 +1106,7 @@ main {
 .subscription {
   background-color: #5fc56c;
   color: var(--clr-white);
+  margin-bottom: 2.5rem;
 }
 .subscription__content {
   display: -webkit-box;
@@ -1116,16 +1117,11 @@ main {
   background-image: url("../images/decor-mult.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right center;
+  background-position: right top;
   width: 70%;
   margin-right: 2.5rem;
 }
-.subscription__info {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
-}
-.subscription__info:nth-last-child(3) {
+.subscription__info p:nth-last-of-type(1) {
   margin-bottom: 2.5rem;
 }
 .subscription__title {
@@ -1135,4 +1131,16 @@ main {
 .subscription__text {
   font-size: 1.125rem;
   line-height: 1.6;
+}
+.subscription__link {
+  padding: 16px 46px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background-color: #50485b;
+  white-space: nowrap;
+}
+
+.footer {
+  background-color: var(--clr-title-4);
 }

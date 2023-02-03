@@ -911,6 +911,7 @@
 .subscription {
     background-color: #5fc56c;
     color: var(--clr-white);
+    margin-bottom: rem(40);
 
     &__content {
         display: flex;
@@ -920,16 +921,14 @@
         background-image: url("../images/decor-mult.png");
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: right center;
+        background-position: right top;
         width: 70%;
         margin-right: rem(40);
 
     }
 
     &__info {
-        flex: 1 0 50%;
-
-        &:nth-last-child(3) {
+        & p:nth-last-of-type(1) {
             margin-bottom: rem(40);
         }
     }
@@ -942,6 +941,19 @@
     &__text {
         font-size: rem(18);
         line-height: 1.6;
-
     }
+        &__link {
+            padding: 16px 46px;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            background-color: #50485b;
+            white-space: nowrap;
+        }
+}
+
+.footer {
+    background-color: var(--clr-title-4);
+
+    
 }
