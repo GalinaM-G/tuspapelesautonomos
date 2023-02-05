@@ -942,18 +942,89 @@
         font-size: rem(18);
         line-height: 1.6;
     }
-        &__link {
-            padding: 16px 46px;
-            font-size: 12px;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            background-color: #50485b;
-            white-space: nowrap;
-        }
+
+    &__link {
+        padding: 16px 46px;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background-color: #50485b;
+        white-space: nowrap;
+    }
 }
 
 .footer {
+    color: var(--clr-white);
     background-color: var(--clr-title-4);
+    font-size: rem(18);
 
-    
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: rem(15);
+
+        @media screen and (max-width: rem(1175)) {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 rem(60);
+        }
+
+        @media screen and (max-width: rem(780)) {
+            grid-template-columns: 1fr;
+            padding: 0;
+        }
+    }
+
+    &__logo {
+       display: inline-block;
+        margin-bottom: rem(60);
+    }
+
+    &__logo-img {
+        max-width: rem(150);
+    }
+
+    &__subtitle {
+        text-align: left;
+        color: var(--clr-white);
+        text-transform: uppercase;
+
+        &::after {
+            left: 0;
+            transform: translateY(0);
+        }
+    }
+
+    &__link {
+        margin-bottom: rem(15);
+        transition: all 0.3s;
+
+        &:hover,
+        &:hover svg {
+            color: var(--clr-decor-1);
+            fill: var(--clr-decor-1);
+        }
+    }
+
+    &__link--mail {
+        display: inline-block;
+        margin-bottom: rem(60);
+    }
+
+    &__shevron {
+        width: rem(10);
+        height: rem(26);
+        fill: var(--clr-white);
+        padding: 6px 3px 0 0;
+    }
+
+    &__payment,
+    &__menu,
+    &__shop,
+    &__contacto {
+        margin-bottom: rem(60);
+    }
+
+
+
+
 }
