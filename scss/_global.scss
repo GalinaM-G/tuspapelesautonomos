@@ -17,9 +17,7 @@
     --ff-secondary: "muli", sans-serif;
 
 }
-// * {
-//     border: 1px solid rgb(167, 167, 167);
-// }
+
 html,
 body {
     height: 100%;
@@ -107,6 +105,7 @@ main {
     letter-spacing: 1.2px;
     text-align: center;
     margin-bottom: rem(40);
+    
 }
 
 .subtext {
@@ -133,5 +132,11 @@ main {
 }
 
 .section {
-    padding: rem(50) 0;
+    padding: rem(100) 0;
+    @media screen and (max-width: rem(1050)) {
+        padding: rem(70) 0;
+    }
+        @media screen and (max-width: rem(765)) {
+            padding: rem(40) 0;
+        }
 }
