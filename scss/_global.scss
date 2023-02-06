@@ -105,7 +105,9 @@ main {
     letter-spacing: 1.2px;
     text-align: center;
     margin-bottom: rem(40);
-    
+    @media screen and (max-width: rem(580)) {
+        font-size: rem(26);
+    }
 }
 
 .subtext {
