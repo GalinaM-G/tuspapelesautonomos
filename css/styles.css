@@ -376,8 +376,8 @@ main {
 .header__info {
   max-width: 46.25rem;
   margin-bottom: 0.625rem;
-  -webkit-animation: fromLeftToRight 1.5s linear 1s;
-          animation: fromLeftToRight 1.5s linear 1s;
+  -webkit-animation: fromLeftToRight 1.5s linear;
+          animation: fromLeftToRight 1.5s linear;
 }
 .header__subtitle {
   display: block;
@@ -436,8 +436,8 @@ main {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-animation: fromBottomToTop 1.5s linear 2s;
-          animation: fromBottomToTop 1.5s linear 2s;
+  -webkit-animation: fromBottomToTop 2s linear;
+          animation: fromBottomToTop 2s linear;
 }
 @media screen and (max-width: 46.875rem) {
   .header__link {
