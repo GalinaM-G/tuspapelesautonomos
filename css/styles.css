@@ -376,16 +376,16 @@ main {
 .header__info {
   max-width: 46.25rem;
   margin-bottom: 0.625rem;
-  -webkit-animation: fromLeftToRight 1.5s linear;
-          animation: fromLeftToRight 1.5s linear;
+  -webkit-animation: fromLeftToRight 5s linear 1;
+          animation: fromLeftToRight 5s linear 1;
 }
 .header__subtitle {
   display: block;
   font-size: 1.125rem;
   letter-spacing: 2px;
   margin-bottom: 0.9375rem;
-  -webkit-animation: fromRightToLeft 1.5s linear;
-          animation: fromRightToLeft 1.5s linear;
+  -webkit-animation: fromRightToLeft 5s linear 1.5;
+          animation: fromRightToLeft 5s linear 1.5;
 }
 .header__info-top {
   display: block;
@@ -436,8 +436,8 @@ main {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-animation: fromBottomToTop 2s linear;
-          animation: fromBottomToTop 2s linear;
+  -webkit-animation: fromBottomToTop 5s linear 2;
+          animation: fromBottomToTop 5s linear 2;
 }
 @media screen and (max-width: 46.875rem) {
   .header__link {
