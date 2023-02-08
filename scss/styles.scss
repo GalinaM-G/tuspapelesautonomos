@@ -115,12 +115,11 @@
         }
     }
 
-   
 
     &__info {
         max-width: rem(740);
         margin-bottom: rem(10);
-        animation: fromLeftToRight 5s linear 1;
+        animation: fromLeftToRight 2s linear;
     }
 
     &__subtitle {
@@ -128,7 +127,7 @@
         font-size: rem(18);
         letter-spacing: 2px;
         margin-bottom: rem(15);
-        animation: fromRightToLeft 5s linear 1.5;
+        animation: fromRightToLeft 1.5s linear;
     }
 
     &__info-top {
@@ -176,7 +175,7 @@
         text-transform: uppercase;
         background: linear-gradient(to right, #92e192, #52a85e);
         transition: all 0.5s;
-        animation: fromBottomToTop 5s linear 2;
+        animation: fromBottomToTop 2s linear;
 
         @media screen and (max-width: rem(750)) {
             padding: 16px;
