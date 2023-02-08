@@ -27,8 +27,6 @@
         @media screen and (max-width: rem(1180)) {
             background-color: var(--clr-white);
         }
-
-
     }
 
     &__top--active {
@@ -83,9 +81,46 @@
         }
     }
 
+    @keyframes fromRightToLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: translateX(-50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes fromLeftToRight {
+        0% {
+            opacity: 0;
+            transform: translateX(200px);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: translateX(100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+   
+
     &__info {
         max-width: rem(740);
         margin-bottom: rem(10);
+        animation: fromLeftToRight 1.5s linear 1s;
     }
 
     &__subtitle {
@@ -93,6 +128,7 @@
         font-size: rem(18);
         letter-spacing: 2px;
         margin-bottom: rem(15);
+        animation: fromRightToLeft 1.5s linear;
     }
 
     &__info-top {
@@ -132,6 +168,7 @@
     }
 
     &__link {
+        display: inline-block;
         padding: 22px 46px;
         font-size: 13px;
         letter-spacing: 1.5px;
@@ -139,6 +176,7 @@
         text-transform: uppercase;
         background: linear-gradient(to right, #92e192, #52a85e);
         transition: all 0.5s;
+        animation: fromBottomToTop 1.5s linear 2s;
 
         @media screen and (max-width: rem(750)) {
             padding: 16px;
@@ -149,6 +187,23 @@
             filter: grayscale(100%) contrast(200%);
         }
     }
+
+         @keyframes fromBottomToTop {
+             0% {
+                 opacity: 0;
+                 transform: translateY(50px);
+             }
+    
+             50% {
+                 opacity: 0.5;
+                 transform: translateY(25px);
+             }
+    
+             100% {
+                 opacity: 1;
+                 transform: translateY(0px);
+             }
+         }
 
     &__bottom {
         color: var(--clr-white);
@@ -409,6 +464,7 @@
         text-align: center;
         border: 1px solid #eee;
         overflow: hidden;
+        height: 100%;
 
         &__img {
             transition: transform 0.3s;
@@ -419,6 +475,7 @@
         }
 
         &__info {
+            flex: 1;
             position: relative;
             padding: rem(115) rem(40) rem(30);
 
@@ -472,7 +529,6 @@
 
         &__title {
             display: inline-block;
-
             font-size: rem(20);
             font-weight: 600;
             color: var(--clr-decor-2);
@@ -821,7 +877,7 @@
         @media screen and (max-width: rem(880)) {
             flex-direction: column;
             max-width: 80%;
-            
+
             margin: 0 auto;
         }
 
@@ -887,7 +943,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            @media screen and (max-width: rem(670)){
+
+            @media screen and (max-width: rem(670)) {
                 flex-direction: column;
                 align-items: end;
             }
@@ -896,9 +953,10 @@
         &__client {
             position: relative;
             padding-left: rem(100);
+
             @media screen and (max-width: rem(670)) {
-                    text-align: right;
-                }
+                text-align: right;
+            }
 
             &::before {
                 position: absolute;
@@ -918,7 +976,7 @@
         }
 
         &__stars {
-             @media screen and (max-width: rem(670)) {
+            @media screen and (max-width: rem(670)) {
                 align-self: end;
             }
         }
@@ -927,7 +985,7 @@
             width: rem(16);
             height: rem(16);
             fill: orange;
-           
+
         }
     }
 
@@ -961,8 +1019,14 @@
     &__items {
         display: flex;
         justify-content: space-between;
+
         gap: rem(55);
         margin-left: rem(25);
+
+        @media screen and (max-width: rem(980)) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__item {
@@ -973,6 +1037,9 @@
         display: flex;
         flex-direction: column;
         position: relative;
+        height: 100%;
+
+
 
         &__date {
             position: absolute;
@@ -1025,6 +1092,7 @@
             color: var(--clr-title-4);
             font-weight: 700;
             margin-bottom: rem(20);
+            flex: 1;
         }
 
         &__link {
